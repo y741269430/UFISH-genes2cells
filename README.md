@@ -34,11 +34,9 @@ ufish predict-imgs test predict --img_glob="*.tif" --intensity_threshold 0.5 --a
 <img src="https://github.com/y741269430/UFISH-genes2cells/blob/main/Imgs/a07.jpg" width="700" />      
 
 - 3.1 该结果存放于`predict`，使用以下脚本转换csv格式（win）     
-
 ```bash
 python .\gene_to_cell_version_7\changePred.py .\predict\Composite.pred.csv .\predict\temp.csv
 ```
-
 - 3.2 使用以下脚本删除dapi通道，例如C4（win）
 ```bash
 python .\gene_to_cell_version_7\remove_gene.py .\predict\temp.csv C4 .\predict\all_gene_location.csv
@@ -47,6 +45,9 @@ python .\gene_to_cell_version_7\remove_gene.py .\predict\temp.csv C4 .\predict\a
 ```bash
 python .\gene_to_cell_version_7\split_gene.py .\predict\all_gene_location.csv .\predict\
 ```
+- 3.4 构建以下文件夹存放
+<img src="https://github.com/y741269430/UFISH-genes2cells/blob/main/Imgs/a09.jpg" width="700" />      
+<img src="https://github.com/y741269430/UFISH-genes2cells/blob/main/Imgs/a07.jpg" width="700" />      
 
 
 
