@@ -46,9 +46,7 @@ python .\gene_to_cell_version_7\remove_gene.py .\predict\temp.csv C4 .\predict\a
 python .\gene_to_cell_version_7\split_gene.py .\predict\all_gene_location.csv .\predict\
 ```
 - 3.4 构建以下文件夹存放
-<img src="https://github.com/y741269430/UFISH-genes2cells/blob/main/Imgs/a08.jpg" width="400" />       
-
-<img src="https://github.com/y741269430/UFISH-genes2cells/blob/main/Imgs/a09.jpg" width="400" /> 
+<img src="https://github.com/y741269430/UFISH-genes2cells/blob/main/Imgs/a08.jpg" width="400" />  <img src="https://github.com/y741269430/UFISH-genes2cells/blob/main/Imgs/a09.jpg" width="400" /> 
 
 
 
