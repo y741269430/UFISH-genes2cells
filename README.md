@@ -45,15 +45,21 @@ python .\gene_to_cell_version_7\remove_gene.py .\predict\temp.csv C4 .\predict\a
 ```bash
 python .\gene_to_cell_version_7\split_gene.py .\predict\all_gene_location.csv .\predict\
 ```
-- 3.4 构建以下文件夹存放
+- 3.4 构建以下文件夹存放（win）    
 <img src="https://github.com/y741269430/UFISH-genes2cells/blob/main/Imgs/a08.jpg" width="400" />  <img src="https://github.com/y741269430/UFISH-genes2cells/blob/main/Imgs/a09.jpg" width="400" /> 
 
+## 4. cellpose细胞分割    
+使用`dapi.tif`进行细胞分割。    
+首先点击`calibrate`预估细胞直径，运行完毕，再点击`additional settings`中的`flow threshold`改为5.4，`cellprob threshold`改为-3    
+<img src="https://github.com/y741269430/UFISH-genes2cells/blob/main/Imgs/a10.jpg" width="700" />     
 
+然后`ctrl+s`保存，得到`dapi_seg.npy`    
+<img src="https://github.com/y741269430/UFISH-genes2cells/blob/main/Imgs/a11.jpg" width="400" />     
 
+## 5. 执行genns to cells    
+将上述构建好的`raw_data`文件，放在桌面，然后运行：(你可以在`main.py`脚本中，自定义输入路径以及输出路径)    
 
-
-
-
-
-
-
+```bash
+python .\gene_to_cell_version_7\main.py
+```
+完成    
